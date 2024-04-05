@@ -167,3 +167,28 @@ a{
     font-weight: bold;
     font-size: 1rem;
 }
+
+/* card panel*/
+
+.article{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(233, 233, 233);
+
+}
+
+.cardContainer{
+ grid-column: 1 / 2;
+ grid-row: 1 / -1;
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+ margin: 15px 15px;
+ gap:15px;
+}
+
+.card{
+    background: white;
+    padding: 30px;
+    border-left: 7px orange solid;
+}
